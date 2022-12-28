@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Kaizen.in</title>
+
+    <style>
+        .logo {
+            font-weight: bold;
+            color: rgb(236, 35, 196);
+        }
+        
+        #search {
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+        .signup {
+            text-align: center;
+        }
+        
+        .data-1 {
+            border: 1px solid black;
+            width: 100%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: rgb(120, 233, 181);
+        }
+        
+        input[type=text] {
+            width: 130px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        /* When the input field gets focus, change its width to 100% */
+        
+        input[type=text]:focus {
+            width: 100%;
+        }
+        
+        .details {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        #content {
+            border: 2px solid rgb(242, 180, 220);
+            font-family: sans-serif;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <span class="title"></span>
+        <span>
+            <img src="sellbuy.png" alt="" width="30px" height="30px">
+        </span>
+
+        </span>
+        <a href="#" class="logo">Kaizen.in</a>
+        <span>
+            <img src="support.gif" alt="" width="30px" height="30px">
+        </span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sell">Sell</a></li>
+            <li><a href="#buy">Buy</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><input type="text" name="search" placeholder="Search.."></li>
+            <!-- <li>
+                <a href="#portfolio"><input type="search" name="" id="search" placeholder="Search..."></a>
+            </li> -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <br><br><br><br>
+    <div class="signup" id="home">
+
+        <button id="myBtn" style="background-color:rgb(211, 207, 207); color:white;"><img src="alertGif.gif" alt=""
+                width="20px" height="20px" style="color:red;"><br>visit icon for more details</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" style="color:red;">
+                <span class="close">&times;</span>
+                <!-- <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p> -->
+                <div class="details">
+                    <p id="content">
+                        <strong>Please change your site in <span style="color:black">Desktop Mode</span></strong>
+                        <marquee behavior="" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                            Easily you will include your old product for the selling in our site ! <br> just you need to upload your product images and add some details <br><strong> [ For example your product rate
+                                ] <br></strong> and you can easily buy the items available in our side...
+                        </marquee>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <!-- <div class="details">
+            <p id="content">
+                <marquee behavior="" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Easily you will include your old product for the selling in our site ! <br> just you need to upload your product images and add some details <br><strong> [ For example your product rate ] <br></strong> and you can easily buy the items
+                    available in our side... form our side...
+                </marquee>
+            </p>
+
+        </div> -->
+        <br><br>
+        <img src="available.jpg" alt="" width="100px" height="100px" id="sell">
+        <br>
+        <img src="preorder.jpg" alt="" width="400px" height="200px" id="sell">
+
+        <img src="mailbackground.jpg" alt="" width="400px" height="200px" id="buy">
+        <br>
+        <img src="sell.png" alt="" width="400px" height="400px" id="sell">
+        <br>
+        <img src="buy.png" alt="" width="400px" height="400px" id="buy">
+
+        <img src="payment.png" alt="" width="400px" height="400px" id="payment">
+
+
+
+    </div>
+    <!-- -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')" style="color:rgb(2, 1, 1);"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')" style="color:rgb(7, 6, 6);"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')" style="color:rgb(19, 18, 18);"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')" style="color:rgb(6, 5, 5);"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column nature">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="img_lights.jpg" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="img_lights.jpg" alt="People" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="img_lights.jpg" alt="People" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="img_lights.jpg" alt="People" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="contact">
+
+
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
